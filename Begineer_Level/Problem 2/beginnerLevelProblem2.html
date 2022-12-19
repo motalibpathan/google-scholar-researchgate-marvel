@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner Problem 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#40ba9b",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed w-full bg-white border-b z-[100]">
+      <div
+        class="max-w-[1200px] lg:p-0 p-5 w-full h-[70px] mx-auto flex justify-between items-center"
+      >
+        <div class="">
+          <img
+            class="lg:w-[150px] w-[120px]"
+            src="https://c5.rgstatic.net/m/419438641133902/images/icons/svgicons/new-index-logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex gap-5">
+          <a
+            class="font-bold hover:underline text-[16px] text-gray-500"
+            href="#"
+            >Log in</a
+          >
+          <a class="font-bold hover:underline text-[16px] text-primary" href="#"
+            >Join for free</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="relative">
+      <div
+        class="lg:w-[70vw] w-[100vw] lg:h-[700px] h-[620px] bg-gray-100 absolute z-[-1]"
+      ></div>
+      <div class="max-w-[1200px] w-full mx-auto">
+        <div class="flex flex-wrap justify-between items-center lg:pt-28 pt-20">
+          <div class="lg:w-1/2 w-full lg:order-1 order-2 my-5">
+            <h1
+              class="lg:text-[38px] text-[24px] lg:leading-[46px] leading-[30px] font-[700] max-w-[460px] w-[70%] lg:mx-0 mx-auto mb-5 text-gray-600"
+            >
+              Discover scientific knowledge and stay connected to the world of
+              science
+            </h1>
+            <div class="lg:max-w-[360px] w-[70%] lg:mx-0 mx-auto">
+              <button
+                class="bg-primary text-white lg:py-4 py-3 lg:text-lg text-md rounded w-full font-bold"
+              >
+                Join for free
+              </button>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 w-full lg:order-2 order-1 lg:h-full h-[300px] overflow-hidden"
+          >
+            <img
+              class="lg:w-full mx-auto"
+              src="https://c5.rgstatic.net/m/4108830164867639/images/index-hero@2x.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:hidden block w-1/2 border-b border-gray-600 mx-auto"></div>
+    <section
+      class="max-w-[1200px] lg:p-0 p-5 w-full mx-auto flex flex-wrap items-center justify-center my-20"
+    >
+      <div class="lg:w-1/2 w-full flex justify-center">
+        <img
+          class="lg:w-[400px] lg:h-[400px] w-[30vw] w-[30vh]"
+          src="https://c5.rgstatic.net/m/4224193134820206/images/index-discover.svg"
+          alt=""
+        />
+      </div>
+      <div class="lg:w-1/2 w-full">
+        <h1 class="lg:text-[40px] text-[30px] font-bold">Discover research</h1>
+        <p class="text-[18px] text-gray-600 mr-2">
+          Access over 135 million publication pages and stay up to date with
+          what's happening in your field.
+        </p>
+        <div
+          class="index-search-field flex items-center p-5 border border-black mt-5 mr-5"
+        >
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg></button
+          ><input
+            class="border-none outline-none pl-3"
+            placeholder="Search publications"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="lg:hidden block w-1/2 border-b border-gray-600 mx-auto"></div>
+    <section
+      class="max-w-[1200px] lg:p-0 p-5 w-full mx-auto flex lg:flex-nowrap flex-wrap gap-10 my-20"
+    >
+      <div class="lg:w-1/2 w-full">
+        <h1 class="lg:text-[40px] text-[24px] font-bold w-[90%] mb-2">
+          Connect with your scientific community
+        </h1>
+        <p class="text-[18px] text-gray-600">
+          Share your research, collaborate with your peers, and get the support
+          you need to advance your career.
+        </p>
+      </div>
+      <div class="lg:w-1/2 w-full">
+        <p class="font-bold text-gray-600">VISIT TOPIC PAGES</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Engineering</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Mathematics</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Biology</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Computer Science</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Climate Change</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Medicine</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Physics</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Social Science</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Medicine</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Astrophysics</span
+          >
+          <span
+            class="inline-block px-4 py-2 border border-primary rounded-full hover:bg-primary hover:bg-opacity-10 text-primary text-[18px]"
+            >Chemistry</span
+          >
+        </div>
+      </div>
+    </section>
+    <div class="lg:hidden block w-1/2 border-b border-gray-600 mx-auto"></div>
+    <section
+      class="max-w-[1200px] lg:p-0 p-5 w-full mx-auto flex flex-wrap items-center my-20"
+    >
+      <div class="lg:w-1/2 w-full flex justify-center">
+        <img
+          class="lg:w-[400px] lg:h-[400px] w-[30vw] w-[30vh]"
+          src="https://c5.rgstatic.net/m/419123737069917/images/index-stats.svg"
+          alt=""
+        />
+      </div>
+      <div class="lg:w-1/2 w-full">
+        <h1 class="lg:text-[40px] text-[30px] font-bold">
+          Measure your impact
+        </h1>
+        <p class="text-[18px] text-gray-600">
+          Get in-depth stats on who's been reading your work and keep track of
+          your citations.
+        </p>
+      </div>
+    </section>
+    <div class="block w-1/2 border-b border-gray-600 mx-auto"></div>
+    <section
+      class="max-w-[1200px] lg:p-0 p-5 w-full mx-auto flex flex-col items-center py-20 mb-20"
+    >
+      <h1
+        class="lg:text-[38px] text-[24px] lg:leading-[46px] leading-[30px] font-[700] max-w-[600px] w-[80%] lg:mx-0 mx-auto mb-5 text-gray-800 mt-10 text-center"
+      >
+        Advance your research and join a community of 20 million scientists
+      </h1>
+      <div class="lg:max-w-[360px] w-[70%] lg:mx-0 mx-auto">
+        <button
+          class="bg-primary text-white lg:py-4 py-3 lg:text-lg text-md rounded w-full font-bold"
+        >
+          Join for free
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-[#ebefee] lg:py-10 text-gray-500">
+      <div
+        class="max-w-[1200px] lg:p-0 p-5 w-full mx-auto flex flex-col lg:pt-10"
+      >
+        <p class="text-[24px] font-light pt-10 pb-3 text-gray-500">
+          ResearchGate Business Solutions
+        </p>
+        <div class="md:flex gap-7">
+          <div class="lg:w-1/2 w-full lg:flex bg-white">
+            <div class="lg:w-[35%] w-full">
+              <img
+                class="w-full h-full"
+                src="https://www.researchgate.net/images/footer-hiring@2x.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="lg:w-[65%] w-full flex flex-col items-start lg:text-left text-center"
+            >
+              <div class="px-7 py-7">
+                <h1 class="text-[16px] font-bold">Scientific Recruitment</h1>
+                <p class="text-[14px] mb-2">
+                  Hire qualified researchers and build the best teams in
+                  science.
+                </p>
+                <button
+                  class="px-2 py-1 border border-primary text-primary hover:bg-primary hover:bg-opacity-10"
+                >
+                  Find out more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 w-full lg:flex bg-white lg:mt-0 mt-5">
+            <div class="lg:w-[35%] w-full">
+              <img
+                class="w-full h-full"
+                src="https://www.researchgate.net/images/footer-advertising@2x.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="lg:w-[65%] w-full flex flex-col items-start lg:text-left text-center"
+            >
+              <div class="px-7 py-7">
+                <h1 class="text-[16px] font-bold">Marketing Solutions</h1>
+                <p class="text-[14px] mb-2">
+                  Grow your brand's impact in the scientific community with the
+                  world's leading network for scientists.
+                </p>
+                <button
+                  class="px-2 py-1 border border-primary text-primary hover:bg-primary hover:bg-opacity-10"
+                >
+                  Find out more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/2 w-4/5 border-b border-gray-400 mx-auto lg:mt-5 mt-10"
+        ></div>
+        <div class="flex justify-between mt-5">
+          <div class="w-1/2">
+            <ul class="lg:flex gap-2 text-[0.75rem] lg:mx-0 mx-10">
+              <li><a class="hover:underline" href="#">About us</a></li>
+              <li><a class="hover:underline" href="#" href="">News</a></li>
+              <li><a class="hover:underline" href="#" href="">Careers</a></li>
+              <li>
+                <a class="hover:underline" href="#" href="">Help Center</a>
+              </li>
+              <li><a class="hover:underline" href="#" href="">Terms</a></li>
+              <li><a class="hover:underline" href="#" href="">Privacy</a></li>
+              <li><a class="hover:underline" href="#" href="">Copyright</a></li>
+              <li><a class="hover:underline" href="#" href="">Imprint</a></li>
+            </ul>
+          </div>
+          <div class="w-1/2 flex justify-end">
+            <ul class="lg:flex gap-2 text-[0.75rem] lg:mx-0 mx-10">
+              <li><a class="hover:underline" href="#"> Researchers</a></li>
+              <li><a class="hover:underline" href="#" href="">Q&A</a></li>
+              <li>
+                <a class="hover:underline" href="#" href="">Publications</a>
+              </li>
+              <li>
+                <a class="hover:underline" href="#" href="">Jobs</a>
+              </li>
+              <li>
+                <a class="hover:underline" href="#" href="">Advertising</a>
+              </li>
+              <li>
+                <a class="hover:underline" href="#" href="">Recruiting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="lg:text-right text-center text-[0.75rem] mt-3">
+          © 2008-2022 ResearchGate GmbH. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 63px;
+}
+
+.menu {
+  width: 55px;
+  flex: 0 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menu i {
+  font-size: 20px;
+}
+
+.logo {
+  width: 159px;
+  margin-right: 31px;
+  flex: 0 0 159px;
+}
+
+.searchContainer {
+  flex: 1 1 auto;
+}
+
+.searchContainer .searchBox {
+  padding: 3px 5px;
+  width: 35%;
+}
+
+.searchContainer .searchBtn {
+  border: none;
+  background-color: #4d90fe;
+  color: white;
+  padding: 5px 10px;
+  margin-left: -5px;
+}
+
+.avatarContainer {
+  width: 64px;
+  max-width: 200px;
+  flex: 0 0 64px;
+}
+.avatarContainer .avatar {
+  border-radius: 50%;
+}
+
+.headerBottom {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+
+.headerBottom .category {
+  padding-left: 15px;
+  width: 190px;
+  flex: 0 0 190px;
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerBottom .category .icon {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -69px -161px;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+}
+
+.headerBottom .category .categoryName {
+  font-size: 18px;
+  color: #666;
+  text-transform: none;
+}
+
+.headerBottom .searchCount {
+  font-size: 13px;
+  color: #666;
+  flex: 1 1 auto;
+  margin-left: 10px;
+}
+
+.headerBottom .items .item .icon1 {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -69px -161px;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+}
+
+.headerBottom .items {
+  width: 200px;
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+.headerBottom .items .item {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.headerBottom .items .item .icon1 {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -69px -254px;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+}
+
+.headerBottom .items .item .icon2 {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -89px -46px;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+}
+.headerBottom .items .item .title {
+  font-weight: 700;
+}
+.headerBottom .items .item .title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.searchResultContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.searchResultContainer .left {
+  width: 200px;
+  flex: 0 0 200px;
+  font-size: 13px;
+}
+
+.searchResultContainer .left .rangeList {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  gap: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.searchResultContainer .left .rangeList .range {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: flex;
+}
+
+.sortTitle {
+  margin-bottom: 0;
+}
+
+.searchResultContainer .left .rangeList a:hover {
+  text-decoration: underline;
+}
+
+.searchResultContainer .right {
+  width: 200px;
+  flex: 0 0 200px;
+}
+
+.checkboxIcon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c6c6c6;
+  border-radius: 1px;
+}
+
+.checked {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -69px -67px;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: -2px;
+  width: 21px;
+  height: 21px;
+  opacity: 0.64;
+}
+
+.envelopIcon {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -91px 0;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+  opacity: 0.64;
+}
+
+.searchResultContainer .right {
+  margin-left: 35px;
+  flex: 1 1 auto;
+}
+
+.resultWrapper .resultTitle {
+  color: #1a0dab;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+.resultWrapper .resultTitle a {
+  text-decoration: none;
+}
+.resultWrapper .resultTitle a:hover {
+  text-decoration: underline;
+}
+.resultWrapper .resultSubTitle a {
+  color: #006621;
+}
+.resultWrapper .resultSubTitle {
+  color: #006621;
+  font-size: 13px;
+}
+.result {
+  margin: 10px 0;
+}
+.resultDescription {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.resultAction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resultAction a {
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+}
+.resultAction a svg {
+  position: relative;
+  width: 15px;
+  height: 16px;
+  vertical-align: text-bottom;
+  fill: none;
+  stroke: #1a0dab;
+}
+
+.relatedSearch {
+  max-width: 600px;
+}
+
+.relatedSearch p {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.relatedSearch .items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.relatedSearch .items a {
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.relatedSearch .items a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  gap: 15px;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 30px 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-width: 0;
+  empty-cells: show;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#gs_n td {
+  font-size: 13px;
+}
+
+td {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  line-height: 1.24;
+}
+
+.gs_ico,
+.gs_icm {
+  display: inline-block;
+  background: no-repeat
+    url(https://scholar.google.com/intl/en/scholar/images/1x/sprite_20161020.png);
+  background-position: -23px -161px;
+  background-size: 169px;
+  width: 21px;
+  height: 21px;
+}
+.gs_ico_nav_first {
+  background-position: -25px -119px;
+  width: 28px;
+  height: 40px;
+}
+.gs_ico_nav_current {
+  background-position: -53px -119px;
+  width: 20px;
+  height: 40px;
+}
+.gs_ico_nav_page {
+  background-position: -73px -119px;
+  width: 20px;
+  height: 40px;
+}
+.gs_ico_nav_next {
+  background-position: -93px -119px;
+  width: 71px;
+  height: 40px;
+}
+
+table tr td a {
+  text-decoration: none;
+}
